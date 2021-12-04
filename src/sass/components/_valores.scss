@@ -1,0 +1,27 @@
+@import "../variables/variables.scss";
+
+.valoresContenedor{
+    margin: 20rem 0rem;
+    .valoresTitulo {
+        font-size: 4rem;
+        margin: 8rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .valoresLista {
+        @include flex(row, center);
+        .valoresDiv {
+            @include flex(column, center);
+            margin: 1rem 5rem;
+            .valoresImg {
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+            }
+            .valores {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}

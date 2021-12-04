@@ -1,0 +1,28 @@
+@import "../variables/variables.scss";
+
+.propositoContenedor {
+    margin: 20rem 0rem;
+    .propositoTitulo {
+        @include flex(column,center);
+        h2 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            align-self: center;
+            margin: 1rem 0rem;
+        }
+    }
+    .proposito {
+        @include flex(row,center);
+        img {width: 500px;}
+        .propositoTextos {
+            @include flex(column,center);
+            width: 450px;
+            margin: 5rem;
+            p {
+                font-size: 2rem;
+                margin: 1rem 0rem;
+                line-height: 3rem;
+            }
+        }
+    }
+}

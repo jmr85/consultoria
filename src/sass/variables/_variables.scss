@@ -1,0 +1,23 @@
+// Colores
+
+$negro: #000000ff;
+$gris: #7d7d7dff;
+$blanco: #ffffffff;
+$amarillo: #fdd835;
+$aqua: #1da0a3ff;
+
+// Flex
+
+@mixin flex($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin flex2($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

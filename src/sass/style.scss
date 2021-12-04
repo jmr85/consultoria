@@ -1,0 +1,20 @@
+// IMPORTS
+
+@import "./variables/variables.scss";
+@import "./components/nav.scss";
+@import "./components/bannerhome.scss";
+@import "./components/proposito.scss";
+@import "./components/misionVision.scss";
+@import "./components/valores.scss";
+@import "./components/frase.scss";
+@import "./components/formulario.scss";
+@import "./components/footer.scss";
+
+// HTML GENERAL
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 62.5%;
+    font-family: 'Gotham', sans-serif;
+}

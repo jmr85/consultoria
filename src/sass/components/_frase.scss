@@ -1,0 +1,13 @@
+@import "../variables/variables.scss";
+
+.fraseContenedor {
+    background-color: $aqua;
+    width: 99vw;
+    height: 150px;
+    @include flex(row, center);
+    h3{
+        font-size: 3rem;
+        color: $blanco;
+        font-style: italic;
+    }
+}

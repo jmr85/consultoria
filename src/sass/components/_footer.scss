@@ -1,0 +1,24 @@
+@import "../variables/variables.scss";
+
+footer {
+    @include flex(row,space-around);
+    padding: 5rem 0rem;
+    .footerLogo {
+        img {width: 300px;}
+    }
+    .footerRedes {
+        @include flex(column,center);
+        font-size: 1.7rem;
+        .footerRedesFlex {
+            @include flex(row,center);
+            list-style: none;
+            padding: 0rem;
+            li {
+                font-size: 2.5rem;
+                .icono {
+                    padding: 0rem 3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import "../variables/variables.scss";
+
+.formularioContenedor {
+    background-color: $amarillo;
+    padding: 8rem 0rem;
+    .formularioTitulos {
+        margin-top: 7rem;
+        margin-bottom: 8rem;
+        margin-left: 23%;
+        h2 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin: 0rem;
+            text-align: left;
+        }
+        h3 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin: 1.5rem 0rem;
+        }
+    }
+    .formulario {
+        form {
+            @include flex(column, center);
+            .formularioFlexRow {
+                @include flex(row, center);
+                .formularioDatos {
+                    @include flex(column, center);
+                    .formularioInputs {
+                        @include flex(row, center);
+                        background-color: $blanco;
+                        width: 502px;
+                        height: 52px;
+                        padding-left: 2rem;
+                        margin: 2rem;
+                        .icono{
+                            color: $negro;
+                            font-size: 2rem;
+                        }
+                        input {
+                            font-family: 'Gotham', sans-serif;
+                            font-size: 1.7rem;
+                            width: 500px;
+                            height: 50px;
+                            margin: 2rem;
+                            border: 0rem;
+                        }
+                        input:focus {
+                            outline: 0rem;
+                        }
+                        input::placeholder {
+                            font-family: 'Gotham', sans-serif;
+                            color: $negro;
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+                .formularioConsulta {
+                    .formularioTextarea {
+                        @include flex2(row, flex-start, flex-start);
+                        background-color: $blanco;
+                        width: 502px;
+                        height: 325px;
+                        padding-left: 2rem;
+                        margin: 2rem;
+                        textarea {
+                            font-family: 'Gotham', sans-serif;
+                            font-size: 1.7rem;
+                            width: 500px;
+                            height: 300px;
+                            border: 0rem;
+                            padding: 1.2rem;
+                        }
+                        textarea:focus {
+                            outline: 0rem;
+                        }
+                        .icono{
+                            color: $negro;
+                            font-size: 2rem;
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+            .formularioBoton {
+                button {
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    background-color: $blanco;
+                    margin: 8rem 0rem;
+                    padding: 1rem 20rem;
+                    border: 0px;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        &:hover {
+                            cursor:pointer;
+                            color: $gris;
+                        }
+                        &:active {
+                            cursor:pointer;
+                            color: $gris;
+                            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+                        }
+                }
+            }    
+        }
+    }
+}
