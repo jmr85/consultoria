@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
 .formularioContenedor {
-    background-color: $amarillo;
+    background-image: url("");
     padding: 8rem 0rem;
     .formularioTitulos {
         margin-top: 7rem;
@@ -12,11 +12,13 @@
             text-transform: uppercase;
             margin: 0rem;
             text-align: left;
+            color: $negro;
         }
         h3 {
             font-size: 3rem;
             text-transform: uppercase;
             margin: 1.5rem 0rem;
+            color: $blanco;
         }
     }
     .formulario {
@@ -29,17 +31,21 @@
                     .formularioInputs {
                         @include flex(row, center);
                         background-color: $blanco;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        border-radius: 10px;
                         width: 502px;
-                        height: 52px;
+                        height: 55px;
                         padding-left: 2rem;
                         margin: 2rem;
                         .icono{
                             color: $negro;
-                            font-size: 2rem;
+                            font-size: 3rem;
                         }
                         input {
                             font-family: 'Gotham', sans-serif;
-                            font-size: 1.7rem;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            color: $negro;
                             width: 500px;
                             height: 50px;
                             margin: 2rem;
@@ -59,25 +65,29 @@
                     .formularioTextarea {
                         @include flex2(row, flex-start, flex-start);
                         background-color: $blanco;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        border-radius: 10px;
                         width: 502px;
-                        height: 325px;
+                        height: 340px;
                         padding-left: 2rem;
                         margin: 2rem;
                         textarea {
                             font-family: 'Gotham', sans-serif;
+                            font-weight: 500;
+                            color: $negro;
                             font-size: 1.7rem;
                             width: 500px;
                             height: 300px;
                             border: 0rem;
-                            padding: 1.2rem;
+                            padding: 2rem 1.5rem;
                         }
                         textarea:focus {
                             outline: 0rem;
                         }
                         .icono{
                             color: $negro;
-                            font-size: 2rem;
-                            padding-top: 1rem;
+                            font-size: 3rem;
+                            padding-top: 1.5rem;
                         }
                     }
                 }
@@ -86,12 +96,13 @@
                 button {
                     font-size: 1.8rem;
                     text-transform: uppercase;
-                    background-color: $blanco;
+                    background-color: $verde;
+                    color: $blanco;
                     margin: 8rem 0rem;
-                    padding: 1rem 20rem;
+                    padding: 2.8rem 25rem;
                     border: 0px;
                     border-radius: 10px;
-                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         &:hover {
                             cursor:pointer;
                             color: $gris;

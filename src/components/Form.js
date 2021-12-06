@@ -21,19 +21,19 @@ function Form() {
                                 <input type="email" name="email" placeholder="Correo Electrónico" required />
                             </div>
                             <div className="formularioInputs">
-                                <i className="bi bi-briefcase icono"></i>
+                                <i class="bi bi-chat-dots icono"></i>
                                 <input type="text" name="asunto" placeholder="Asunto" />
                             </div>
                             <div className="formularioInputs">
-                                <i className="bi bi-telephone icono"></i>
+                                <i className="bi bi-phone icono"></i>
                                 <input type="tel" name="teléfono" placeholder="Teléfono (Opcional)" />
                             </div>
 
                         </div>
                         <div className="formularioConsulta">
                             <div className="formularioTextarea">
-                                <i className="bi bi-chat-right-text icono"></i>
-                                <textarea name="consulta" placeholder="Dejanos tu consulta"></textarea>
+                                <i className="bi bi-pencil icono"></i>
+                                <textarea name="consulta" placeholder="Dejanos tu consulta..."></textarea>
                             </div>
                         </div>
                     </div>

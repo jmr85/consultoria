@@ -1,15 +1,10 @@
 @import "../variables/variables.scss";
 
 .misionVisionContenedor {
-    @include flex(column, center);
-        .misionVisionFila{
-        @include flex(row, center);
-            .mvInfoContenedor {
-                display: flex;
-                flex-direction: column;
-                align-content: flex-start;
-                justify-content: center;
-                width: 49vw;
+    @include flex(row, center);
+            .cards {
+                @include flex(column, center);
+                width: 500px;
                 height: 400px;
                 .mVTitulo {
                     margin: .5rem 9rem;
@@ -31,9 +26,4 @@
                     margin: 0rem;
                 }
             }
-            .misionInfoContenedor {background-color: $amarillo;}
-            .visionInfoContenedor {background-color: $aqua;}
-        
-        }
-    
 }
