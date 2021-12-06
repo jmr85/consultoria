@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import PageNotFound from '../components/PageNotFound'
 import Home from '../components/Home'
-import Proposito from '../components/Proposito'
 import Form from '../components/Form'
 
 const RouterApp = () => {
@@ -11,7 +10,6 @@ const RouterApp = () => {
     <Router>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/proposito" component={Proposito} />
             <Route exact path="/contacto" component={Form} />
             <Route path="*" component={PageNotFound} />
           </Switch>

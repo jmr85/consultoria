@@ -3,27 +3,26 @@
 .misionVisionContenedor {
     @include flex(row, center);
             .cards {
-                @include flex(column, center);
-                width: 500px;
-                height: 400px;
+                @include flex2(column, flex-start, flex-start);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                width: 600px;
+                height: auto;
+                margin: 5rem;
+                img {
+                    width: 600px;
+                    height: 300px;
+                    margin: 0rem;
+                }
                 .mVTitulo {
-                    margin: .5rem 9rem;
-                    font-size: 4rem;
+                    margin: 4rem 3rem;
+                    font-size: 4.5rem;
                     text-transform: uppercase;
                 }
                 .mVTexto {
-                    width: 50%;
-                    margin: 0rem 9rem;
-                    font-size: 3rem;
+                    width: 70%;
+                    line-height: 30px;
+                    margin: 0rem 3rem 6rem 3rem;
+                    font-size: 2.5rem;
                 }
-            }
-            .mVImgContenedor {
-                width: 49vw;
-                height: 400px;
-                img {
-                    width: 49vw;
-                    height: 400px;
-                    margin: 0rem;
-                }
-            }
+            }      
 }

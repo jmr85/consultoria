@@ -2,22 +2,30 @@
 
 footer {
     @include flex(row,space-around);
+    background-color: $verdoso;
     padding: 5rem 0rem;
     .footerLogo {
-        img {width: 300px;}
+        @include flex(column,center);
+        img {width: 600px;}
+        p{
+            font-size: 1.7rem;
+            color: $blanco;
+            font-weight: 300;
+        }
     }
     .footerRedes {
         @include flex(column,center);
-        font-size: 1.7rem;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        color: $blanco;
+        font-weight: 400;
         .footerRedesFlex {
             @include flex(row,center);
             list-style: none;
             padding: 0rem;
             li {
-                font-size: 2.5rem;
-                .icono {
-                    padding: 0rem 3rem;
-                }
+                font-size: 3.5rem;
+                padding: 0rem 2rem;
             }
         }
     }

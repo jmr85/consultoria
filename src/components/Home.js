@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from '../components/Nav'
-import BannerHome from './BannerHome'
 import Proposito from './Proposito'
 import MisionVision from './MisionVision'
 import Valores from './Valores'
@@ -12,7 +11,6 @@ function Home() {
     return (
         <>
             <Nav />
-            <BannerHome/>
             <Proposito/>
             <MisionVision/>
             <Valores/>

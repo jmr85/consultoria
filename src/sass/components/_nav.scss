@@ -1,23 +1,62 @@
 @import "../variables/variables.scss";
 
-.navegador {
-    @include flex(row,space-around);
-    .contenedorLogo {
-        img {width: 250px;}
-    }
-    .contenedorMenu {
-        ul {
-            @include flex(row,center);
-            list-style: none;
-            li {
-                font-size: 1.8rem;
-                padding: 2rem;
-                text-align: center;
-            }
-            a{
-                text-decoration: none;
-                color: $negro;
+header {
+    background-color: #FFFDE7CC;
+    background-image: url("../../assets/fondoBanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .navegador {
+        background-color: rgba(0, 0, 0, 0);
+        @include flex(row,space-around);
+        .contenedorLogo {
+            img {width: 500px;}
+        }
+        .contenedorMenu {
+            ul {
+                @include flex(row,center);
+                list-style: none;
+                li {
+                    color: $blanco;
+                    font-size: 2rem;
+                    padding: 2rem 4rem;
+                    text-align: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: $blanco;
+                }
             }
         }
     }
+    .contenedorBannerHome {
+        @include flex(column, flex-start);
+        height: 80vh;
+        img {
+            width: 70vw;
+            margin: 0rem;
+        }
+        button {
+            font-size: 2.7rem;
+            text-transform: uppercase;
+            background-color: $verde;
+            letter-spacing: 5px;
+            color: $blanco;
+            margin: 0rem;
+            padding: 2.5rem 15rem;
+            border: 0px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                &:hover {
+                    cursor:pointer;
+                    color: $blanco;
+                }
+                &:active {
+                    cursor:pointer;
+                    color: $blanco;
+                    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 16px 0px inset, rgba(0, 0, 0, 0.15) -3px -3px 16px 1px inset, rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+        }
+    }
+
 }
