@@ -10,12 +10,10 @@ const Nav = () => {
         </div>
         <div className="contenedorMenu">
           <ul>
-            <li>Inicio</li>
+            <li><NavLink to="/">Inicio</NavLink></li>
             <li><NavLink to="/proposito">Nuestro Propósito</NavLink></li>
-            {/* <li>Nuestro<br/>Propósito</li> */}
-            <li>Valores</li>
-            <li><NavLink to="/contacto">Contacto</NavLink></li>
-            
+            <li><NavLink to="/valores">Valores</NavLink></li>
+            <li><NavLink to="/contacto">Contacto</NavLink></li>      
           </ul>
         </div>
       </nav>
