@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/consultoria/static/css/main.3d643a83.chunk.css",
+    "main.js": "/consultoria/static/js/main.48fa3cf6.chunk.js",
+    "main.js.map": "/consultoria/static/js/main.48fa3cf6.chunk.js.map",
+    "runtime-main.js": "/consultoria/static/js/runtime-main.b2a4b1e6.js",
+    "runtime-main.js.map": "/consultoria/static/js/runtime-main.b2a4b1e6.js.map",
+    "static/js/2.427255b0.chunk.js": "/consultoria/static/js/2.427255b0.chunk.js",
+    "static/js/2.427255b0.chunk.js.map": "/consultoria/static/js/2.427255b0.chunk.js.map",
+    "index.html": "/consultoria/index.html",
+    "static/css/main.3d643a83.chunk.css.map": "/consultoria/static/css/main.3d643a83.chunk.css.map",
+    "static/js/2.427255b0.chunk.js.LICENSE.txt": "/consultoria/static/js/2.427255b0.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/consultoria/static/media/fondoFrase.6bad7319.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2a4b1e6.js",
+    "static/js/2.427255b0.chunk.js",
+    "static/css/main.3d643a83.chunk.css",
+    "static/js/main.48fa3cf6.chunk.js"
+  ]
+}
