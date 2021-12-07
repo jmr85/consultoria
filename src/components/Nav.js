@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -19,7 +19,9 @@ const Nav = () => {
       </nav>
       <div className="contenedorBannerHome">
             <img src="./logo.png" alt="logo" />
-            <button>CONTÁCTANOS</button>
+            <Link to="/contacto">
+              <button>CONTÁCTANOS</button>
+            </Link>
       </div>
     </header>
   )
