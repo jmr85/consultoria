@@ -21,7 +21,7 @@ function Form() {
                                 <input type="email" name="email" placeholder="Correo Electrónico" required />
                             </div>
                             <div className="formularioInputs">
-                                <i class="bi bi-chat-dots icono"></i>
+                                <i className="bi bi-chat-dots icono"></i>
                                 <input type="text" name="asunto" placeholder="Asunto" />
                             </div>
                             <div className="formularioInputs">

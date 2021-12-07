@@ -1,12 +1,19 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 function Footer() {
+    const initialState = new Date().getFullYear();
+    const [year, setYear] = useState(initialState);
+
+    useEffect(() => {
+        setYear(new Date().getFullYear());
+    }, [])
+    
     return (
         <>
             <footer>
                 <div className="footerLogo">
                     <img src="./logoFooter.png" alt="logo"/>
-                    <p>Copyright 2021 - Derechos reservados </p>
+                    <p>Copyright {year} - Derechos reservados </p>
                 </div>
                 <div className="footerRedes">
                     <h3>¡Seguinos!</h3>
