@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const Nav = () => {
 
@@ -13,22 +13,21 @@ const Nav = () => {
         </div>
         <div className="contenedorMenu">
           <ul>
-            <a href="#inicio"><li>Inicio</li></a>
-            <a href="#proposito"><li>Nuestro Propósito</li></a>
-            <a href="#valores"><li>Valores</li></a>
-            <a href="#contacto"><li>Contacto</li></a>
-            {/* <li><NavLink to="/">Inicio</NavLink></li>
-            <li><NavLink to="/proposito">Nuestro Propósito</NavLink></li>
-            <li><NavLink to="/valores">Valores</NavLink></li>
-            <li><NavLink to="/contacto">Contacto</NavLink></li>  */}     
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proposito">Nuestro Propósito</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
       </nav>
       <div className="contenedorBannerHome">
-            <img src="./logo.png" alt="logo" />
-            <Link to="/contacto">
-              <button>CONTÁCTANOS</button>
-            </Link>
+        <img src="./logo.png" alt="logo" />
+        <button onClick={(e) => {
+          e.preventDefault();
+          window.location.href = '#contacto';
+        }}>
+          CONTÁCTANOS
+        </button>
       </div>
     </header>
   )
