@@ -1,17 +1,16 @@
 @import "../variables/variables.scss";
 
 .fraseContenedor {
-    background-image: url("../../assets/fondoFrase.png");
-    background-repeat: no-repeat;
-    background-position:center;
-    width: 99wv;
-    height: 400px;
-    @include flex(column, center);
-    margin: 2rem;
+    @include flex(row, center);
+    margin: 15rem 0rem;
+    img{
+        width:10%;
+        padding: 2rem;
+    }
     h3{
         font-size: 4.5rem;
-        color: $gris;
-        font-weight: 500;
+        color: $negro;
+        font-weight: 400;
         font-style: italic;
     }
 }

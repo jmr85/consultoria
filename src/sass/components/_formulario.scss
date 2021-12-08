@@ -96,12 +96,13 @@
             }
             .formularioBoton {
                 button {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     text-transform: uppercase;
                     background-color: $verde;
+                    letter-spacing: 2px;
                     color: $blanco;
                     margin: 8rem 0rem;
-                    padding: 2.8rem 25rem;
+                    padding: 1.8rem 12rem;
                     border: 0px;
                     border-radius: 10px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

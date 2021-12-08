@@ -2,13 +2,13 @@ import React from 'react'
 
 function Proposito() {
     return (
-        <div className="propositoContenedor">
+        <div className="propositoContenedor" id="proposito">
             <div className="propositoTitulo">
                 <h2>Nuestro propósito</h2>
             </div>
             <div className="proposito">
                 <div>
-                    <img src="./empresa.jpg" alt="" />
+                    <img src="./empresa.png" alt="" />
                 </div>
                 <div className="propositoTextos">
                     <p>

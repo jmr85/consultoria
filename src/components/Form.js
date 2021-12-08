@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form() {
     return (
-        <div className="formularioContenedor">
+        <div className="formularioContenedor" id="contacto">
             <div className="formularioTitulos">
                 <h2>Conversemos sobre tu proyecto</h2>
                 <h3>Nos encantaría ayudarte</h3>
