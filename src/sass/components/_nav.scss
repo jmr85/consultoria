@@ -33,7 +33,7 @@ header {
     }
     .contenedorBannerHome {
         @include flex(column, flex-start);
-        height: 80vh;
+        height: 100vh;
         img {
             width: 70vw;
             margin: 0rem;
