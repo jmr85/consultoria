@@ -1,13 +1,29 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 
 const Nav = () => {
 
   // Lógica para que el nav se vuelva blanco cuando se mueva de top 0
+  // Por ahora lo deje con el color promario $verde
+  const [isWhite, setIsWhite] = useState(false)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("scroll -> ", window.scrollY);
+      if (window.scrollY > 0) {
+        setIsWhite(true)
+      } else {
+        setIsWhite(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
     <header id="inicio">
-      <nav className="navegador">
+      <nav className={isWhite ? 'navegador active' : 'navegador'}>
         <div className="contenedorLogo">
           <img src="./logo.png" alt="logo" />
         </div>

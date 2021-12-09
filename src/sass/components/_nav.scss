@@ -31,6 +31,9 @@ header {
             }
         }
     }
+    .active {
+        background-color: $verde;  
+    }
     .contenedorBannerHome {
         @include flex(column, flex-start);
         height: 100vh;
