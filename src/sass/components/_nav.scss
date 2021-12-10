@@ -32,7 +32,7 @@ header {
         }
     }
     .active {
-        background-color: $verde;  
+        background-color: $verde-transparente;
     }
     .contenedorBannerHome {
         @include flex(column, flex-start);
