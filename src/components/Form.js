@@ -22,7 +22,7 @@ function Form() {
                             </div>
                             <div className="formularioInputs">
                                 <i className="bi bi-chat-dots icono"></i>
-                                <input type="text" name="asunto" placeholder="Asunto" />
+                                <input type="text" name="asunto" placeholder="Asunto" required/>
                             </div>
                             <div className="formularioInputs">
                                 <i className="bi bi-phone icono"></i>
@@ -33,7 +33,7 @@ function Form() {
                         <div className="formularioConsulta">
                             <div className="formularioTextarea">
                                 <i className="bi bi-pencil icono"></i>
-                                <textarea name="consulta" placeholder="Dejanos tu consulta..."></textarea>
+                                <textarea name="consulta" placeholder="Dejanos tu consulta..." required></textarea>
                             </div>
                         </div>
                     </div>

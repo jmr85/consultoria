@@ -13,8 +13,8 @@ function Home() {
             <Nav />
             <Proposito/>
             <MisionVision/>
+            <Frase/>
             <Valores/>
-            <Frase/> 
             <Form/>
             <Footer/>
         </>

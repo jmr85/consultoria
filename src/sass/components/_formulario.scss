@@ -10,14 +10,14 @@
         margin-bottom: 8rem;
         margin-left: 23%;
         h2 {
-            font-size: 4.5rem;
+            font-size: 44px;
             text-transform: uppercase;
             margin: 0rem;
             text-align: left;
-            color: $negro;
+            color: $blanco;
         }
         h3 {
-            font-size: 3.8rem;
+            font-size: 36px;
             text-transform: uppercase;
             margin: 2rem 0rem;
             color: $blanco;
@@ -104,7 +104,7 @@
                     margin: 8rem 0rem;
                     padding: 1.8rem 12rem;
                     border: 0px;
-                    border-radius: 10px;
+                    border-radius: 48px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         &:hover {
                             cursor:pointer;

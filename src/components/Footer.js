@@ -18,7 +18,6 @@ function Footer() {
                 <div className="footerRedes">
                     <h3>¡Seguinos!</h3>
                     <ul className="footerRedesFlex">
-                        <li><i className="bi bi-behance"></i></li>
                         <li><i className="bi bi-linkedin"></i></li>
                     </ul>
                 </div>

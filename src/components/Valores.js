@@ -11,7 +11,7 @@ function Valores() {
                 </div>
                 <div className="valoresDiv">
                     <img className="valoresImg" src="./valor2.png" alt="" />
-                    <p className="valores">Honestidad</p>
+                    <p className="valores">Respeto</p>
                 </div>
                 <div className="valoresDiv">
                     <img className="valoresImg" src="./valor3.png" alt="" />
@@ -19,7 +19,7 @@ function Valores() {
                 </div>
                 <div className="valoresDiv">
                     <img className="valoresImg" src="./valor4.png" alt="" />
-                    <p className="valores">Respeto</p>
+                    <p className="valores">Honestidad</p>
                 </div>
                 <div className="valoresDiv">
                     <img className="valoresImg" src="./valor5.png" alt="" />

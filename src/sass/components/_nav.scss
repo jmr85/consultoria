@@ -20,7 +20,7 @@ header {
                 list-style: none;
                 li {
                     color: $blanco;
-                    font-size: 2rem;
+                    font-size: 18px;
                     padding: 2rem 4rem;
                     text-align: center;
                 }
@@ -39,7 +39,7 @@ header {
         height: 100vh;
         img {
             width: 70vw;
-            margin: 0rem;
+            margin-top: 15rem;
         }
         button {
             font-size: 2rem;
@@ -50,7 +50,7 @@ header {
             margin: 0rem;
             padding: 2rem 8rem;
             border: 0px;
-            border-radius: 10px;
+            border-radius: 48px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 &:hover {
                     cursor:pointer;

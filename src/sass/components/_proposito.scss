@@ -2,25 +2,22 @@
 
 .propositoContenedor {
     padding: 20rem 0rem;
-    .propositoTitulo {
-        @include flex(column,center);
-        h2 {
-            font-size: 4.5rem;
-            text-transform: uppercase;
-            align-self: center;
-            margin: 1rem 0rem;
-        }
-    }
     .proposito {
         @include flex(row,center);
-        img {width: 500px;}
+        img {width: 460px;}
         .propositoTextos {
-            @include flex(column,center);
-            width: 500px;
+            @include flex2(column, flex-start, center);
+            width: 520px;
             margin: 5rem;
+            h2 {
+                font-size: 44px;
+                text-transform: uppercase;
+                align-self: flex-start;
+                margin: 1rem 0rem 4rem 0rem;
+            }
             p {
-                font-size: 2.5rem;
-                margin: 2rem 0rem;
+                font-size: 18px;
+                margin: .5rem 0rem;
                 line-height: 3rem;
             }
         }
