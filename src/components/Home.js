@@ -6,6 +6,7 @@ import Valores from './Valores'
 import Frase from './Frase'
 import Form from './Form'
 import Footer from './Footer'
+import Experiencia from './Experiencia'
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <MisionVision/>
             <Frase/>
             <Valores/>
+            <Experiencia/>
             <Form/>
             <Footer/>
         </>

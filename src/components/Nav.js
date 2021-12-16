@@ -32,6 +32,7 @@ const Nav = () => {
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#proposito">Nuestro Propósito</a></li>
             <li><a href="#valores">Valores</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>

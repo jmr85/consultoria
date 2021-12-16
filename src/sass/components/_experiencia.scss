@@ -1,0 +1,36 @@
+@import "../variables/variables.scss";
+
+.experienciaContenedor{
+    margin: 20rem 0rem 0rem;
+    padding: 20rem 0rem;
+    background-color: $verde-valores;
+    .experienciaTitulo {
+        font-size: 48px;
+        margin: 8rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .experienciaLista {
+        @include flex(row, center);
+        .experienciaDiv {
+            @include flex(column, center);
+            margin: 1rem 5rem;
+            .experienciaImg {
+                border-radius: 50%;
+                height: 160px;
+                width: 160px;
+            }
+            .experienciaNeuquenImg {
+                border-radius: 50%;
+                height: 260px;
+                width: 260px;
+            }
+            .experiencia {
+                color: $gris;
+                font-weight: 500;
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
