@@ -22,11 +22,7 @@ function Form() {
                             </div>
                             <div className="formularioInputs">
                                 <i className="bi bi-chat-dots icono"></i>
-<<<<<<< HEAD
                                 <input type="text" name="asunto" placeholder="Asunto" minlength="4" required />
-=======
-                                <input type="text" name="asunto" placeholder="Asunto" minlength="4" required />
->>>>>>> c57834ac91eecc89fc2d8b88bd1d2c11dd05fd59
                             </div>
                             <div className="formularioInputs">
                                 <i className="bi bi-phone icono"></i>
@@ -37,11 +33,7 @@ function Form() {
                         <div className="formularioConsulta">
                             <div className="formularioTextarea">
                                 <i className="bi bi-pencil icono"></i>
-<<<<<<< HEAD
                                 <textarea name="consulta" placeholder="Dejanos tu consulta..." minlength="5" required></textarea>
-=======
-                                <textarea name="consulta" placeholder="Dejanos tu consulta..." minlength="5" required></textarea>
->>>>>>> c57834ac91eecc89fc2d8b88bd1d2c11dd05fd59
                             </div>
                         </div>
                     </div>
