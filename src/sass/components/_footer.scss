@@ -20,6 +20,9 @@ footer {
         text-transform: uppercase;
         color: $blanco;
         font-weight: 400;
+        .CopyrightFooter {
+            display:none;
+        }
         .footerRedesFlex {
             @include flex(row,center);
             list-style: none;
@@ -41,20 +44,30 @@ footer {
         .footerLogo {
             @include flex(column,center);
             img {width: 70vw; padding-bottom: 2rem;}
-            p{
-                font-size: 1.3rem;
-            }
+            p{display: none;}
         }
         .footerRedes {
-            @include flex(row,center);
+            @include flex(column,center);
             font-size: 18px;
-            .footerRedesFlex {
+            .footerSeguinos {
                 @include flex(row,center);
-                margin: 0rem 2rem;
-                li {
-                    font-size: 2.5rem;
+                padding-bottom: 2rem;
+                .footerRedesFlex {
+                    @include flex(row,center);
+                    margin: 0rem 2rem;
+                    li {
+                        font-size: 2.5rem;
+                    }
                 }
             }
+            .CopyrightFooter {
+                display:block;
+                font-size: 12px;
+                color: $blanco;
+                font-weight: 300;
+                margin: 0rem;
+            }
+            
         }
     }
 }

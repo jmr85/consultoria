@@ -16,10 +16,15 @@ function Footer() {
                     <p>Copyright {year} - Derechos reservados </p>
                 </div>
                 <div className="footerRedes">
-                    <h3>¡Seguinos!</h3>
-                    <ul className="footerRedesFlex">
-                        <li><i className="bi bi-linkedin"></i></li>
-                    </ul>
+                    <div className="footerSeguinos">
+                        <h3>¡Seguinos!</h3>
+                        <ul className="footerRedesFlex">
+                            <li><i className="bi bi-linkedin"></i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p className="CopyrightFooter">Copyright {year} - Derechos reservados </p>
+                    </div>
                 </div>
             </footer>
         </>

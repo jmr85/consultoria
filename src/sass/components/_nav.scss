@@ -90,9 +90,11 @@ header {
                 ul {
                     @include flex(row,center);
                     list-style: none;
+                    margin: 0rem;
+                    padding: 0rem;
                     li {
-                        font-size: 14px;
-                        padding: 2rem 4rem;
+                        font-size: 13px;
+                        padding: 2rem .5rem;
                     }
                 }
             }
