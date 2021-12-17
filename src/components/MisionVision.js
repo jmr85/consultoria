@@ -5,7 +5,7 @@ function MisionVision() {
         <div className="misionVisionContenedor">
             <div className="visionCard cards">
                 <div>
-                    <img src="./vision.png" alt="colegas trabajando"/>
+                    <img className="visionMovil" src="./vision.png" alt="colegas trabajando"/>
                 </div>
                 <div>
                     <h2 className="mVTitulo">Visión</h2>
@@ -14,7 +14,7 @@ function MisionVision() {
             </div>
             <div className="misionCard cards">
                 <div>
-                    <img src="./mision.png" alt="" />
+                    <img className="misionMovil" src="./mision.png" alt="" />
                     </div>
                 <div>
                     <h2 className="mVTitulo">Misión</h2>

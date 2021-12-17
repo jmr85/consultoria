@@ -10,6 +10,7 @@
     }
     .valoresLista {
         @include flex(row, center);
+        flex-wrap: wrap;
         .valoresDiv {
             @include flex(column, center);
             margin: 1rem 5rem;

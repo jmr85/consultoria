@@ -96,3 +96,30 @@ header {
     
     }
 }
+
+/* VERSIÓN MEDIA */
+@media only screen and (min-width: 601px) and (max-width: 1300px) {
+    header {
+        .navegador {
+            .contenedorLogo {
+                img {width: 250px;}
+            }
+            .contenedorMenu {
+                ul {
+                    li {
+                        font-size: 18px;
+                        padding: 2rem 2rem;
+                    }
+                }
+            }
+        }
+        .contenedorBannerHome {
+            img {
+                width: 50vw;
+                margin-top: 23rem;
+                margin-bottom: 3rem;
+            }
+        }
+    
+    }
+}

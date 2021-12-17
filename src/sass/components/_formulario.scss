@@ -28,6 +28,7 @@
             @include flex(column, center);
             .formularioFlexRow {
                 @include flex(row, center);
+                flex-wrap: wrap;
                 .formularioDatos {
                     @include flex(column, center);
                     .formularioInputs {
@@ -189,6 +190,21 @@
                         border-radius: 48px;
                     }
                 }    
+            }
+        }
+    }
+}
+
+/* VERSIÓN MEDIA */
+@media only screen and (min-width: 601px) and (max-width: 1300px) {
+    .formularioContenedor {
+        .formularioTitulos {
+            margin-top: 7rem;
+            margin-bottom: 8rem;
+            text-align: center;
+            margin-left: 0rem;
+            h2 {
+               text-align: center; 
             }
         }
     }

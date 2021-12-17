@@ -12,6 +12,7 @@
     }
     .experienciaLista {
         @include flex(row, center);
+        flex-wrap: wrap;
         .experienciaDiv {
             @include flex(column, center);
             margin: 1rem 5rem;
