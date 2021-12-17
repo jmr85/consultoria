@@ -6,7 +6,7 @@ footer {
     padding: 5rem 0rem;
     .footerLogo {
         @include flex(column,center);
-        img {width: 600px;}
+        img {width: 400px; padding-bottom: 2rem;}
         p{
             font-size: 1.7rem;
             color: $blanco;
@@ -27,6 +27,33 @@ footer {
             padding: 0rem;
             li {
                 font-size: 5rem;
+            }
+        }
+    }
+}
+
+/* VERSIÓN MÓVIL */
+@media only screen and (max-width: 600px) {
+    footer {
+        @include flex(column,center);
+        background-color: $verdoso;
+        padding: 5rem 0rem;
+        .footerLogo {
+            @include flex(column,center);
+            img {width: 70vw; padding-bottom: 2rem;}
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .footerRedes {
+            @include flex(row,center);
+            font-size: 18px;
+            .footerRedesFlex {
+                @include flex(row,center);
+                margin: 0rem 2rem;
+                li {
+                    font-size: 2.5rem;
+                }
             }
         }
     }

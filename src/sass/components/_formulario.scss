@@ -120,3 +120,76 @@
         }
     }
 }
+
+/* VERSIÓN MÓVIL */
+@media only screen and (max-width: 600px) {
+    .formularioContenedor {
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        padding: 2rem 0rem 4rem 0rem;
+        .formularioTitulos {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+        }
+        .formulario {
+            form {
+                .formularioFlexRow {
+                    @include flex(column, center);
+                    .formularioDatos {
+                        .formularioInputs {
+                            @include flex(row, center);
+                            border-radius: 4px;
+                            width: 85vw;
+                            margin: 1rem;
+                            .icono{
+                                color: $negro;
+                                font-size: 2.7rem;
+                            }
+                            input {
+                                margin: 1rem;
+                            }
+                            input::placeholder {
+                                color: $gris;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .formularioConsulta {
+                        .formularioTextarea {
+                            border-radius: 10px;
+                            width: 85vw;
+                            height: 240px;
+                            padding-left: 2rem;
+                            margin: 2rem;
+                            textarea {
+                                font-size: 14px;
+                                width: 250px;
+                                height: 200px;
+                            }
+                            .icono{
+                                font-size: 2.7rem;
+                            }
+                        }
+                    }
+                }
+                .formularioBoton {
+                    button {
+                        font-size: 14px;
+                        margin: 2rem 0rem;
+                        padding: 1rem 4rem;
+                        border: 0px;
+                        border-radius: 48px;
+                    }
+                }    
+            }
+        }
+    }
+}

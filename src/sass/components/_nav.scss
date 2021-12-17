@@ -11,8 +11,9 @@ header {
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
         @include flex(row,space-around);
+        padding: 1rem 0rem;
         .contenedorLogo {
-            img {width: 500px;}
+            img {width: 290px;}
         }
         .contenedorMenu {
             ul {
@@ -38,8 +39,9 @@ header {
         @include flex(column, flex-start);
         height: 100vh;
         img {
-            width: 70vw;
-            margin-top: 15rem;
+            width: 50vw;
+            margin-top: 30rem;
+            margin-bottom: 3rem;
         }
         button {
             font-size: 2rem;
@@ -64,4 +66,51 @@ header {
         }
     }
 
+}
+
+/* VERSIÓN MÓVIL */
+@media only screen and (max-width: 600px) {
+    header {
+        background-image: url("../../assets/fondoBanner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        .navegador {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            @include flex(row,space-around);
+            padding: 1rem 0rem;
+            .contenedorLogo {
+                img {display: none;}
+            }
+            .contenedorMenu {
+                ul {
+                    @include flex(row,center);
+                    list-style: none;
+                    li {
+                        font-size: 14px;
+                        padding: 2rem 4rem;
+                    }
+                }
+            }
+        }
+        .contenedorBannerHome{
+            img {
+                width: 90vw;
+                margin-top: 9rem;
+            }
+            button {
+                font-size: 14px;
+                letter-spacing: 1px;
+                margin: 0rem;
+                padding: 1rem 3.5rem;
+                border: 0px;
+                border-radius: 48px;
+            }
+        }
+    
+    }
 }

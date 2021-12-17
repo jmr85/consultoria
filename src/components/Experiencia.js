@@ -12,7 +12,7 @@ function Experiencia() {
                     <img className="experienciaImg" src="./experiencia2.svg" alt="" />
                 </div>
                 <div className="experienciaDiv">
-                    <img className="experienciaImg" src="./experiencia3.svg" alt="" />
+                    <img className="experienciaImg experienciaCirculo" src="./experiencia3.svg" alt="" />
                 </div>
                 <div className="experienciaDiv">
                     <img className="experienciaImg" src="./experiencia4.svg" alt="" />

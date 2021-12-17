@@ -15,3 +15,28 @@
         font-weight: 600;
     }
 }
+
+/* VERSIÓN MÓVIL */
+@media only screen and (max-width: 600px) {
+    .fraseContenedor {
+        @include flex(column, center);
+        background-size: cover;
+        height: 184px;
+        margin: 4rem 0rem;
+        img{
+            width: 52px;
+            padding: 2rem;
+        }
+        .comilla1 {
+            align-self: flex-start;
+        }
+        .comilla2 {
+            align-self: flex-end;
+        }
+        h3{
+            font-size: 24px;
+            margin: 0rem 1rem;
+            text-align: center;
+        }
+    }
+}
