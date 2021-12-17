@@ -8,17 +8,31 @@ import Form from './Form'
 import Footer from './Footer'
 import Experiencia from './Experiencia'
 
+import FadeInSections from "./FadeInSections";
+
 function Home() {
     return (
         <>
             <Nav />
-            <Proposito/>
-            <MisionVision/>
-            <Frase/>
-            <Valores/>
-            <Experiencia/>
-            <Form/>
-            <Footer/>
+            <FadeInSections>
+                <Proposito />
+            </FadeInSections>
+            <FadeInSections>
+                <MisionVision />
+            </FadeInSections>
+            <FadeInSections>
+                <Frase />
+            </FadeInSections>
+            <FadeInSections>
+                <Valores />
+            </FadeInSections>
+            <FadeInSections>
+                <Experiencia />
+            </FadeInSections>
+            <FadeInSections>
+                <Form />
+            </FadeInSections>
+            <Footer />
         </>
     )
 }
