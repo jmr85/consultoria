@@ -33,9 +33,10 @@
 @media only screen and (max-width: 600px) {
     .misionVisionContenedor {
         @include flex(column, center);
+        margin: 0rem;
                 .cards {
                     @include flex2(row, flex-start, flex-start);
-                    width: 95vw;
+                    width: 90vw;
                     height: 170px;
                     margin: 2rem;
                     img {
@@ -45,9 +46,11 @@
                     }
                     .visionMovil{
                         content:url("../../assets/visionMovil.png");
+                        margin: 0rem;
                     }
                     .misionMovil{
                         content:url("../../assets/misionMovil.png");
+                        margin: 0rem;
                     }
                     .mVTitulo {
                         margin: .5rem 0rem .5rem 1rem;
