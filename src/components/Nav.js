@@ -9,7 +9,7 @@ const Nav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scroll -> ", window.scrollY);
+      // console.log("scroll -> ", window.scrollY);
       if (window.scrollY > 0) {
         setIsWhite(true)
       } else {
