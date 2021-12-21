@@ -28,6 +28,10 @@ header {
                 a{
                     text-decoration: none;
                     color: $blanco;
+                    &:hover{
+                        color:$blanco;
+                        cursor:pointer;
+                    }
                 }
             }
         }
