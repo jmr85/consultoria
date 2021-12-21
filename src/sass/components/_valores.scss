@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
 .valoresContenedor{
-    margin: 20rem 0rem;
+    padding: 20rem 0rem;
     .valoresTitulo {
         font-size: 48px;
         margin: 8rem;
@@ -32,13 +32,13 @@
 /* VERSIÓN MÓVIL */
 @media only screen and (max-width: 600px) {
     .valoresContenedor{
-        margin: 5rem 0rem;
+        padding: 5rem 0rem;
         .valoresTitulo {
             font-size: 24px;
             margin: 3rem;
         }
         .valoresLista {
-            @include flex(row, center);
+            @include flex2(row, center, flex-start);
             flex-wrap: wrap;
             .valoresDiv {
                 @include flex(column, center);

@@ -30,7 +30,7 @@ const Nav = () => {
         <div className="contenedorMenu">
           <ul>
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#proposito">Nuestro Propósito</a></li>
+            <li><a href="#proposito">Nuestro propósito</a></li>
             <li><a href="#valores">Valores</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -43,7 +43,7 @@ const Nav = () => {
           e.preventDefault();
           window.location.href = '#contacto';
         }}>
-          CONTÁCTANOS
+          CONTACTANOS
         </button>
       </div>
     </header>

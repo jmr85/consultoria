@@ -19,7 +19,7 @@ function Footer() {
                     <div className="footerSeguinos">
                         <h3>¡Seguinos!</h3>
                         <ul className="footerRedesFlex">
-                            <li><i className="bi bi-linkedin"></i></li>
+                            <li><a href="https://www.linkedin.com/in/nataliruizdegalarreta/" target="_blank"><i className="bi bi-linkedin"></i></a></li>
                         </ul>
                     </div>
                     <div>

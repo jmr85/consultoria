@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
 .propositoContenedor {
-    padding: 20rem 0rem;
+    padding: 13rem 0rem;
     .proposito {
         @include flex(row,center);
         img {
@@ -41,6 +41,7 @@
             h2 {
                 font-size: 24px;
                 align-self: center;
+                text-align: center;
                 margin: 0rem 0rem 2rem 0rem;
             }
             p {

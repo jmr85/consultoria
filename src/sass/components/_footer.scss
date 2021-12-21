@@ -16,7 +16,7 @@ footer {
     }
     .footerRedes {
         @include flex(column,center);
-        font-size: 28px;
+        font-size: 20px;
         text-transform: uppercase;
         color: $blanco;
         font-weight: 400;
@@ -29,7 +29,11 @@ footer {
             margin: 0rem;
             padding: 0rem;
             li {
-                font-size: 5rem;
+                font-size: 3.5rem;
+                a{
+                    color:$blanco;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -48,7 +52,7 @@ footer {
         }
         .footerRedes {
             @include flex(column,center);
-            font-size: 18px;
+            font-size: 15px;
             .footerSeguinos {
                 @include flex(row,center);
                 padding-bottom: 2rem;
@@ -56,7 +60,8 @@ footer {
                     @include flex(row,center);
                     margin: 0rem 2rem;
                     li {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
+                        a {color:$blanco;}
                     }
                 }
             }

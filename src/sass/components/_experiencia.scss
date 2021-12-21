@@ -1,9 +1,12 @@
 @import "../variables/variables.scss";
 
 .experienciaContenedor{
-    margin: 20rem 0rem 0rem;
-    padding: 20rem 0rem;
-    background-color: $verde-valores;
+    background-image: url("../../assets/fondoExperiencia.png");
+    background-repeat: repeat;
+    background-position:center;
+    background-size: cover;
+    margin: 0rem;
+    padding: 10rem 0rem;
     .experienciaTitulo {
         font-size: 48px;
         margin: 8rem;
@@ -41,6 +44,8 @@
     .experienciaContenedor{
         margin: 0rem;
         padding: 3rem 0rem;
+        background-image: url("");
+        background-color: $verde-valores;
         .experienciaTitulo {
             font-size: 24px;
             margin: 1rem 0rem 2rem 0rem;

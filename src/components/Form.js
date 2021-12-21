@@ -9,7 +9,7 @@ function Form() {
             </div>
             <div className="formulario">
                 {/* Hay que poner el Email de Natalí y lo tiene que activar desde tu casilla de email */}
-                <form action="https://formsubmit.co/your@email.com" method="POST">
+                <form action="https://formsubmit.co/nataliruizdeg@gmail.com" method="POST">
                     <div className="formularioFlexRow">
                         <div className="formularioDatos">
                             <div className="formularioInputs">
