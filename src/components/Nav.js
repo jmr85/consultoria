@@ -1,19 +1,18 @@
 import React, {useState, useEffect} from 'react'
-// import { Link } from 'react-router-dom'
+import FondoBanner from '../../src/assets/fondoBanner.svg';
 
 const Nav = () => {
-
-  // Lógica para que el nav se vuelva blanco cuando se mueva de top 0
-  // Por ahora lo deje con el color promario $verde
-  const [isWhite, setIsWhite] = useState(false)
+  // Lógica para que el nav cambie de color cuando se hace scroll vertical
+  // Por ahora lo deje con el color primario $verde-transparente
+  const [isScrollY, setIsScrollY] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       // console.log("scroll -> ", window.scrollY);
       if (window.scrollY > 0) {
-        setIsWhite(true)
+        setIsScrollY(true)
       } else {
-        setIsWhite(false)
+        setIsScrollY(false)
       }
     }
     window.addEventListener('scroll', handleScroll)
@@ -22,8 +21,8 @@ const Nav = () => {
     }
   }, [])
   return (
-    <header id="inicio">
-      <nav className={isWhite ? 'navegador active' : 'navegador'}>
+    <header id="inicio" style={{backgroundImage: `url(${FondoBanner})` }}>
+      <nav className={isScrollY ? 'navegador active' : 'navegador'}>
         <div className="contenedorLogo">
           <img src="./logo.png" alt="logo" />
         </div>

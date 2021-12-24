@@ -1,7 +1,10 @@
 @import "../variables/variables.scss";
 
 header {
-    background-image: url("../../assets/fondoBanner.png");
+    // background-image: url("../../assets/fondoBanner.svg");
+    // deje background-image comentado porque use style inline
+    // dentro del componente react Nav.js porque de esa manera no espera a que cargue el css
+    // dentro de Nav.js linea 24 -> <header id="inicio" style={{backgroundImage: `url(${FondoBanner})` }}>
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,7 +84,7 @@ header {
 /* VERSIÓN MÓVIL */
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url("../../assets/fondoBanner.png");
+        background-image: url("../../assets/fondoBanner.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
