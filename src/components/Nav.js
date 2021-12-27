@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import FondoBanner from '../../src/assets/fondoBanner.svg';
+import React, { useState, useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link';
+// import FondoBanner from '../../src/assets/fondoBanner.webp';
 
 const Nav = () => {
   // Lógica para que el nav cambie de color cuando se hace scroll vertical
@@ -21,18 +22,28 @@ const Nav = () => {
     }
   }, [])
   return (
-    <header id="inicio" style={{backgroundImage: `url(${FondoBanner})` }}>
+    <header id="inicio">
       <nav className={isScrollY ? 'navegador active' : 'navegador'}>
         <div className="contenedorLogo">
           <img src="./logo.png" alt="logo" />
         </div>
         <div className="contenedorMenu">
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#proposito">Nuestro propósito</a></li>
-            <li><a href="#valores">Valores</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <HashLink className='item' smooth to="/#inicio">
+              Inicio
+            </HashLink>;
+            <HashLink className='item' smooth to="/#proposito">
+              Nuestro proposito
+            </HashLink>;
+            <HashLink className='item' smooth to="/#valores">
+              Valores
+            </HashLink>;
+            <HashLink className='item' smooth to="/#experiencia">
+              Experiencia
+            </HashLink>;
+            <HashLink className='item' smooth to="/#contacto">
+              Contacto
+            </HashLink>;
           </ul>
         </div>
       </nav>

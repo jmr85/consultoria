@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
 header {
-    // background-image: url("../../assets/fondoBanner.svg");
+    background-image: url("../../assets/fondoBanner.png");
     // deje background-image comentado porque use style inline
     // dentro del componente react Nav.js porque de esa manera no espera a que cargue el css
     // dentro de Nav.js linea 24 -> <header id="inicio" style={{backgroundImage: `url(${FondoBanner})` }}>
@@ -22,7 +22,7 @@ header {
             ul {
                 @include flex(row,center);
                 list-style: none;
-                li {
+                li, .item {
                     color: $blanco;
                     font-size: 18px;
                     padding: 2rem 4rem;
@@ -31,12 +31,6 @@ header {
                 a{
                     text-decoration: none;
                     color: $blanco;
-                    &:hover{
-                        color:$blanco;
-                        cursor:pointer;
-                        transform: scale(0.7,0.7);
-                        transition:all 0.5s ease;
-                    }
                 }
             }
         }
@@ -84,7 +78,7 @@ header {
 /* VERSIÓN MÓVIL */
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url("../../assets/fondoBanner.svg");
+        background-image: url("../../assets/fondoBanner.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
